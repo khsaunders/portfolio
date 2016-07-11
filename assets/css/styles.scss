@@ -83,4 +83,36 @@ body{
           color: $white;
         }
       }
+      #pageGuts-contactform{
+        display: none;
+        position: relative;
+        width: 60%;
+        height: 50%;
+        margin: auto;
+        padding: 2%;
+        background-color: $silver;
+        border-radius: 2px;
+        box-shadow: $boxShadow;
+        #pageGuts-button--exit{
+          color: $white;
+          position: relative;
+          left: 98%;
+          padding-bottom: 1%;
+        }
+        .contactForm-small{
+          padding: .5%;
+          margin: 1% 0;
+          width: 98%;
+        }
+        .contactForm-large{
+          @extend .contactForm-small;
+          height: 10em;
+        }
+        #pageGuts-button--send{
+          @extend .pageGuts-button;
+          left: 88.7%;
+          background-color: $tangerine;
+          color: white;
+        }
+      }
     }

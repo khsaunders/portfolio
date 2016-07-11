@@ -54,20 +54,39 @@
         </div>
     </div>
 
-        <!--PAGE-->
-    <div class = "pageGuts-wrapper">
-      <p class = "pageGuts-bio">
-        Hi there,
-        <br>
-        I am a front-end engineer who makes stuff and things. I have a background in Communication and customer service, but a passion for developing the web.
-      </p>
-      <button class = "pageGuts-button">
-        RESUME</button>
-      <button class = "pageGuts-button">
-        CONTACT</button>
+    <!--PAGE-->
+    <!--bio paragraph-->
+    <div class="pageGuts-wrapper">
+        <p class="pageGuts-bio">
+            Hi there,
+            <br> I am a front-end engineer who makes stuff and things. I have a background in Communication and customer service, but a passion for developing the web.
+        </p>
+        <button class="pageGuts-button">
+            RESUME</button>
+        <button class="pageGuts-button">
+            CONTACT</button>
 
+        <!--contact modal-->
+        <div id="pageGuts-contactform">
+          <div id = "pageGuts-button--exit">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+
+            <ul>
+                <li>
+                    <input type="text" class="contactForm-small" placeholder="name"> </li>
+                <li>
+                    <input type="text" class="contactForm-small" placeholder="email"> </li>
+                <li>
+                    <input type="text" class="contactForm-large" placeholder="message"> </li>
+            </ul>
+            <button id = "pageGuts-button--send">
+              SEND</button>
+        </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>
