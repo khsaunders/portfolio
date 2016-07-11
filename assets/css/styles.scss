@@ -1,15 +1,23 @@
 //variables
 // $backgroundColor:
 $mainFont: Roboto Condensed;
+$boxShadow: 0px 1px 10px #888888;
+$silver: #c6bfb8;
+$white: #EEE9E4;
+$tangerine: #E2492F;
 
 body{
   font-family: $mainFont;
+  background-color: $white;
+  letter-spacing: .18em;
 }
 .headerWrapper{
   width: 100%;
+  background-color: $white;
   a{
     text-decoration: none;
     cursor: pointer;
+    color: $tangerine;
   }
   .linkButtons{
     font-size: 1.8em;
@@ -23,9 +31,56 @@ body{
     }
     }
   .nameLinks{
-  margin: -2% 5%;
-    li{
-      padding-bottom: 1%;
+    margin: -2% 5% 0 5%;
+      .nameLinks-contact-twitter{
+        font-size: 2em;
+        padding-bottom: .5em;
+        }
+      .nameLinks-contact-gh{
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        }
       }
     }
-  }
+
+    .dropdownWrapper{
+      display: none;
+      width: 20%;
+      background-color: $white;
+      box-shadow: $boxShadow;
+      color: $tangerine;
+      margin: -1% 5%;
+      padding: 1% 3%;
+      .dropdownMenu-links-cats{
+        padding: 3% 0;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        left: 10%;
+      }
+    }
+    .pageGuts-wrapper{
+      width: 80%;
+      margin: auto;
+      .pageGuts-bio{
+        font-size: 1.5em;
+        margin: auto;
+        border-radius: 2px;
+        color: $silver;
+        padding: 2%;
+      }
+      .pageGuts-button{
+        position: relative;
+        left: 80%;
+        border-radius: 1px;
+        border: solid 2px $tangerine;
+        color: $tangerine;
+        background-color: $white;
+        padding: 1% 2%;
+        letter-spacing: .18em;
+        &:hover{
+          background-color: $tangerine;
+          color: $white;
+        }
+      }
+    }
