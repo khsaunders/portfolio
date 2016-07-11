@@ -1,0 +1,23 @@
+body {
+  font-family: Roboto Condensed; }
+
+.headerWrapper {
+  width: 100%; }
+  .headerWrapper a {
+    text-decoration: none;
+    cursor: pointer; }
+  .headerWrapper .linkButtons {
+    font-size: 1.8em;
+    position: relative;
+    margin: 2% 5% 0 0;
+    left: 83%;
+    vertical-align: top;
+    display: inline-block; }
+    .headerWrapper .linkButtons a {
+      padding-right: .5em; }
+  .headerWrapper .nameLinks {
+    margin: -2% 5%; }
+    .headerWrapper .nameLinks li {
+      padding-bottom: 1%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,31 @@
+//variables
+// $backgroundColor:
+$mainFont: Roboto Condensed;
+
+body{
+  font-family: $mainFont;
+}
+.headerWrapper{
+  width: 100%;
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .linkButtons{
+    font-size: 1.8em;
+    position: relative;
+    margin: 2% 5% 0 0;
+    left: 83%;
+    vertical-align: top;
+    display: inline-block;
+    a{
+      padding-right: .5em;
+    }
+    }
+  .nameLinks{
+  margin: -2% 5%;
+    li{
+      padding-bottom: 1%;
+      }
+    }
+  }
