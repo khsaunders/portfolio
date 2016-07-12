@@ -298,6 +298,14 @@ body{
   font-family: $mainFont;
   background-color: $white;
   letter-spacing: .18em;
+  button{
+    outline: none;
+    border: none;
+  }
+  input{
+    outline: none;
+    border: none;
+  }
 }
 .headerWrapper{
   width: 100%;
@@ -317,9 +325,16 @@ body{
     a{
       padding-right: .5em;
     }
+    .contactInfo-phone{
+      margin-top: .8em;
+      font-size: .5em;
+      color: $tangerine;
+    }
     }
   .nameLinks{
-    margin: -2% 5% 0 5%;
+    position: relative;
+    width: 25%;
+    margin: -4% 5% 0 5%;
       .nameLinks-contact-twitter{
         font-size: 2em;
         padding-bottom: .5em;
@@ -335,16 +350,20 @@ body{
       display: none;
       width: 20%;
       background-color: $white;
-      box-shadow: $boxShadow;
+      // box-shadow:$boxShadow;
       color: $tangerine;
       margin: -1% 5%;
-      padding: 1% 3%;
+      padding: 1% 0;
       .dropdownMenu-links-cats{
         padding: 3% 0;
-        text-align: center;
+        text-align: left;
         width: 80%;
         position: relative;
-        left: 10%;
+        // left: 10%;
+        cursor: pointer;
+      }
+      .dropdownMenu-links-cats--contact{
+        @extend .dropdownMenu-links-cats;
       }
     }
     .pageGuts-wrapper{
@@ -373,14 +392,16 @@ body{
       }
       #pageGuts-contactform{
         display: none;
+        z-index: 10;
         position: relative;
         width: 60%;
         height: 50%;
-        margin: auto;
+        margin: -15% 5%;
         padding: 2%;
+        left: 12%;
         background-color: $silver;
         border-radius: 2px;
-        box-shadow: $boxShadow;
+        box-shadow: $boxShadow, $boxShadow, $boxShadow;
         #pageGuts-button--exit{
           color: $white;
           position: relative;
@@ -408,12 +429,12 @@ body{
         font-size: 1.8em;
         margin: 2%;
       }
-      .gridImage{
+      .gridImage {
         position: relative;
         left: 20%;
         border: solid 2px $silver;
-        width: 10em;
-        height: 10em;
+        width: 15em;
+        height: 15em;
         padding: 2%;
         color: $silver;
         &:hover{
@@ -425,9 +446,28 @@ body{
       .gridImage-description{
         display: none;
         position: relative;
-        left: 20%;
+        left: 12%;
         width: 10em;
-        margin-top: 3%;
+        margin-top: 20%;
         color: $tangerine;
+      }
+      .linkButtons-bottom{
+        text-align: center;
+        margin-top: 15%;
+        font-size: 2em;
+        position: relative;
+        color: $tangerine;
+        a{
+          color: $tangerine;
+        }
+        .contactInfo-phone--bottom{
+          padding-top: 2%;
+          text-align: center;
+          font-size: .6em;
+          margin: 0 -15%;
+
+        }
+
+
       }
     }
