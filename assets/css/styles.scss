@@ -356,7 +356,6 @@ body{
       display: none;
       width: 20%;
       background-color: $white;
-      // box-shadow:$boxShadow;
       color: $tangerine;
       margin: -1% 5%;
       padding: 1% 0;
@@ -375,6 +374,12 @@ body{
 				@extend .dropdownMenu-links-cats;
 			}
     }
+		#pageGuts-headshot{
+			width: 12em;
+			height: 12em;
+			position: relative;
+			left: 40%;
+		}
     .pageGuts-wrapper{
       width: 80%;
       margin: auto;
@@ -392,8 +397,19 @@ body{
         border: solid 2px $tangerine;
         color: $tangerine;
         background-color: $white;
-        padding: 1% 2%;
         letter-spacing: .18em;
+				text-decoration: none;
+				padding: 1% 0;
+				a{
+					text-decoration: none;
+					color: $tangerine;
+					padding: 15% 32%;
+					position: relative;
+					right: 2%;
+					&:hover{
+						color: $white;
+					}
+				}
         &:hover{
           background-color: $tangerine;
           color: $white;
@@ -453,6 +469,7 @@ body{
 					.gridImage-description{
 						display: block;
 						margin-top: 6%;
+						width: 80%;
 					}
 					img{
 						display: none;
@@ -499,10 +516,13 @@ body{
 						text-decoration: none;
 					}
         }
+				#bottomEmail{
+					font-size: .7em;
+				}
       }
 			#pageGuts-resumeModal{
 				display: none;
-				background-color: $silver;
+				background-color: white;
 				position: relative;
 				margin-top: -29.5%;
 				left: 20%;
@@ -512,16 +532,30 @@ body{
 				box-shadow: $boxShadow;
 				#pageGuts-button--exitR{
 					position: relative;
-					padding: 1% 3%;
-					left: 93.5%;
-					color: $white;
+					padding: 3% 3%;
+					left: 50%;
+					color: $silver;
+					#resumeExitButton:hover{
+						cursor: pointer;
+					}
+					#resumePopOut{
+						text-decoration: none;
+						color: $silver;
+						size: .6em;
+						position: relative;
+						margin-right: 9%;
+						letter-spacing: 1px;
+					}
+					#resumePopOut:hover{
+						text-decoration: underline;
+					}
 				}
 				#pageGuts-resumeModal--placeholder{
 					position: relative;
-					left: 2.5%;
+					left: 1%;
 					margin: 2% 0;
-					width: 95%;
-					height: 95%;
+					width: 98%;
+					height: 98%;
 				}
 			}
     }
