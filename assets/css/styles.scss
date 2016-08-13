@@ -1,8 +1,8 @@
 //variables
 // $backgroundColor:
 $mainFont: Roboto Condensed;
-$boxShadow: 0px 1px 10px #888888;
-$silver: #c6bfb8;
+$boxShadow: 0px 1px 6px #888888;
+$silver: #BBB4AE;
 $white: #EEE9E4;
 $tangerine: #E2492F;
 
@@ -308,6 +308,7 @@ body{
   }
 }
 .headerWrapper{
+  margin-top: 3%;
   width: 100%;
   background-color: $white;
   a{
@@ -329,6 +330,11 @@ body{
       margin-top: .8em;
       font-size: .5em;
       color: $tangerine;
+			text-decoration: none;
+			&hover{
+				cursor: pointer;
+				text-decoration: none;
+			}
     }
     }
   .nameLinks{
@@ -365,6 +371,9 @@ body{
       .dropdownMenu-links-cats--contact{
         @extend .dropdownMenu-links-cats;
       }
+			.dropdownMenu-links-cats--resume{
+				@extend .dropdownMenu-links-cats;
+			}
     }
     .pageGuts-wrapper{
       width: 80%;
@@ -401,7 +410,7 @@ body{
         left: 12%;
         background-color: $silver;
         border-radius: 2px;
-        box-shadow: $boxShadow, $boxShadow, $boxShadow;
+        box-shadow: $boxShadow;
         #pageGuts-button--exit{
           color: $white;
           position: relative;
@@ -441,33 +450,78 @@ body{
           border: solid 2px $tangerine;
           background-color: $silver;
           color: $tangerine;
+					.gridImage-description{
+						display: block;
+						margin-top: 6%;
+					}
+					img{
+						display: none;
+					}
+					a{
+						text-decoration: none;
+					}
+					#viewGHRepo{
+						text-decoration: underline;
+						i{
+							font-size: .85em;
+							text-decoration: underline;
+						}
+					}
         }
       }
       .gridImage-description{
         display: none;
         position: relative;
         left: 12%;
-        width: 10em;
-        margin-top: 20%;
+        width: 12em;
+        margin-top: 8%;
         color: $tangerine;
+				font-size: .88em;
       }
       .linkButtons-bottom{
         text-align: center;
-        margin-top: 15%;
+        margin: 5% 0;
         font-size: 2em;
         position: relative;
         color: $tangerine;
         a{
           color: $tangerine;
+					text-decoration: none;
         }
         .contactInfo-phone--bottom{
-          padding-top: 2%;
+					text-decoration: none;
+          padding-top: 1.5%;
           text-align: center;
           font-size: .6em;
           margin: 0 -15%;
-
+					&hover{
+						cursor: pointer;
+						text-decoration: none;
+					}
         }
-
-
       }
+			#pageGuts-resumeModal{
+				display: none;
+				background-color: $silver;
+				position: relative;
+				margin-top: -29.5%;
+				left: 20%;
+				width: 60%;
+				height: 80%;
+				z-index: 15;
+				box-shadow: $boxShadow;
+				#pageGuts-button--exitR{
+					position: relative;
+					padding: 1% 3%;
+					left: 93.5%;
+					color: $white;
+				}
+				#pageGuts-resumeModal--placeholder{
+					position: relative;
+					left: 2.5%;
+					margin: 2% 0;
+					width: 95%;
+					height: 95%;
+				}
+			}
     }
