@@ -1,11 +1,251 @@
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://dallasbass.com
+*/
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding-right: 20px;
+  /* column-space */ }
+
+[class*='col-'] [class*='col-']:last-child {
+  padding-right: 0; }
+
+.grid {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 748px;
+  /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+  margin: 0 auto;
+  overflow: hidden; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 20px;
+  /* grid-space to left */
+  padding-right: 0;
+  /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */ }
+
+.push-right {
+  float: right; }
+
+/* Content Columns */
+.col-1-1 {
+  width: 100%; }
+
+.col-2-3, .col-8-12 {
+  width: 66.66%; }
+
+.col-1-2, .col-6-12 {
+  width: 50%; }
+
+.col-1-3, .col-4-12 {
+  width: 33.33%; }
+
+.col-1-4, .col-3-12 {
+  width: 25%; }
+
+.col-1-5 {
+  width: 20%; }
+
+.col-1-6, .col-2-12 {
+  width: 16.667%; }
+
+.col-1-7 {
+  width: 14.28%; }
+
+.col-1-8 {
+  width: 12.5%; }
+
+.col-1-9 {
+  width: 11.1%; }
+
+.col-1-10 {
+  width: 10%; }
+
+.col-1-11 {
+  width: 9.09%; }
+
+.col-1-12 {
+  width: 8.33%; }
+
+/* Layout Columns */
+.col-11-12 {
+  width: 91.66%; }
+
+.col-10-12 {
+  width: 83.333%; }
+
+.col-9-12 {
+  width: 75%; }
+
+.col-5-12 {
+  width: 41.66%; }
+
+.col-7-12 {
+  width: 58.33%; }
+
+/* Pushing blocks */
+.push-2-3, .push-8-12 {
+  margin-left: 66.66%; }
+
+.push-1-2, .push-6-12 {
+  margin-left: 50%; }
+
+.push-1-3, .push-4-12 {
+  margin-left: 33.33%; }
+
+.push-1-4, .push-3-12 {
+  margin-left: 25%; }
+
+.push-1-5 {
+  margin-left: 20%; }
+
+.push-1-6, .push-2-12 {
+  margin-left: 16.667%; }
+
+.push-1-7 {
+  margin-left: 14.28%; }
+
+.push-1-8 {
+  margin-left: 12.5%; }
+
+.push-1-9 {
+  margin-left: 11.1%; }
+
+.push-1-10 {
+  margin-left: 10%; }
+
+.push-1-11 {
+  margin-left: 9.09%; }
+
+.push-1-12 {
+  margin-left: 8.33%; }
+
+@media handheld, only screen and (max-width: 767px) {
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    /* grid-space to left */
+    padding-right: 10px;
+    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */ }
+
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin: 10px 0;
+    padding-left: 0;
+    padding-right: 10px;
+    /* column-space */ }
+
+  [class*='col-'] [class*='col-'] {
+    padding-right: 0; }
+
+  /* Mobile Layout */
+  [class*='mobile-col-'] {
+    float: left;
+    margin: 0 0 10px;
+    padding-left: 0;
+    padding-right: 10px;
+    /* column-space */
+    padding-bottom: 0; }
+
+  .mobile-col-1-1 {
+    width: 100%; }
+
+  .mobile-col-2-3, .mobile-col-8-12 {
+    width: 66.66%; }
+
+  .mobile-col-1-2, .mobile-col-6-12 {
+    width: 50%; }
+
+  .mobile-col-1-3, .mobile-col-4-12 {
+    width: 33.33%; }
+
+  .mobile-col-1-4, .mobile-col-3-12 {
+    width: 25%; }
+
+  .mobile-col-1-5 {
+    width: 20%; }
+
+  .mobile-col-1-6, .mobile-col-2-12 {
+    width: 16.667%; }
+
+  .mobile-col-1-7 {
+    width: 14.28%; }
+
+  .mobile-col-1-8 {
+    width: 12.5%; }
+
+  .mobile-col-1-9 {
+    width: 11.1%; }
+
+  .mobile-col-1-10 {
+    width: 10%; }
+
+  .mobile-col-1-11 {
+    width: 9.09%; }
+
+  .mobile-col-1-12 {
+    width: 8.33%; }
+
+  /* Layout Columns */
+  .mobile-col-11-12 {
+    width: 91.66%; }
+
+  .mobile-col-10-12 {
+    width: 83.333%; }
+
+  .mobile-col-9-12 {
+    width: 75%; }
+
+  .mobile-col-5-12 {
+    width: 41.66%; }
+
+  .mobile-col-7-12 {
+    width: 58.33%; }
+
+  .hide-on-mobile {
+    display: none !important;
+    width: 0;
+    height: 0; } }
 body {
-  font-family: Roboto Condensed; }
+  font-family: Roboto Condensed;
+  background-color: #EEE9E4;
+  letter-spacing: .18em; }
+  body button {
+    outline: none;
+    border: none; }
+  body input {
+    outline: none;
+    border: none; }
 
 .headerWrapper {
-  width: 100%; }
+  margin-top: 3%;
+  width: 100%;
+  background-color: #EEE9E4; }
   .headerWrapper a {
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #E2492F; }
   .headerWrapper .linkButtons {
     font-size: 1.8em;
     position: relative;
@@ -15,9 +255,190 @@ body {
     display: inline-block; }
     .headerWrapper .linkButtons a {
       padding-right: .5em; }
+    .headerWrapper .linkButtons .contactInfo-phone {
+      margin-top: .8em;
+      font-size: .5em;
+      color: #E2492F;
+      text-decoration: none; }
+      .headerWrapper .linkButtons .contactInfo-phonehover {
+        cursor: pointer;
+        text-decoration: none; }
   .headerWrapper .nameLinks {
-    margin: -2% 5%; }
-    .headerWrapper .nameLinks li {
+    position: relative;
+    width: 25%;
+    margin: -4% 5% 0 5%; }
+    .headerWrapper .nameLinks .nameLinks-contact-twitter {
+      font-size: 2em;
+      padding-bottom: .5em; }
+    .headerWrapper .nameLinks .nameLinks-contact-gh {
+      font-size: 1.5em;
+      padding-bottom: 1em; }
+
+.dropdownWrapper {
+  display: none;
+  width: 20%;
+  background-color: #EEE9E4;
+  color: #E2492F;
+  margin: -1% 5%;
+  padding: 1% 0; }
+  .dropdownWrapper .dropdownMenu-links-cats, .dropdownWrapper .dropdownMenu-links-cats--contact, .dropdownWrapper .dropdownMenu-links-cats--resume {
+    padding: 3% 0;
+    text-align: left;
+    width: 80%;
+    position: relative;
+    cursor: pointer; }
+
+#pageGuts-headshot {
+  width: 12em;
+  height: 12em;
+  position: relative;
+  left: 40%; }
+
+.pageGuts-wrapper {
+  width: 80%;
+  margin: auto; }
+  .pageGuts-wrapper .pageGuts-bio {
+    font-size: 1.5em;
+    margin: auto;
+    border-radius: 2px;
+    color: #BBB4AE;
+    padding: 2%; }
+  .pageGuts-wrapper .pageGuts-button, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
+    position: relative;
+    left: 80%;
+    border-radius: 1px;
+    border: solid 2px #E2492F;
+    color: #E2492F;
+    background-color: #EEE9E4;
+    letter-spacing: .18em;
+    text-decoration: none;
+    padding: 1% 0; }
+    .pageGuts-wrapper .pageGuts-button a, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a {
+      text-decoration: none;
+      color: #E2492F;
+      padding: 15% 32%;
+      position: relative;
+      right: 2%; }
+      .pageGuts-wrapper .pageGuts-button a:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a:hover {
+        color: #EEE9E4; }
+    .pageGuts-wrapper .pageGuts-button:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send:hover {
+      background-color: #E2492F;
+      color: #EEE9E4; }
+  .pageGuts-wrapper #pageGuts-contactform {
+    display: none;
+    z-index: 10;
+    position: relative;
+    width: 60%;
+    height: 50%;
+    margin: -15% 5%;
+    padding: 2%;
+    left: 12%;
+    background-color: #BBB4AE;
+    border-radius: 2px;
+    box-shadow: 0px 1px 6px #888888; }
+    .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--exit {
+      color: #EEE9E4;
+      position: relative;
+      left: 98%;
       padding-bottom: 1%; }
+    .pageGuts-wrapper #pageGuts-contactform .contactForm-small, .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
+      padding: .5%;
+      margin: 1% 0;
+      width: 98%; }
+    .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
+      height: 10em; }
+    .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
+      left: 88.7%;
+      background-color: #E2492F;
+      color: white; }
+  .pageGuts-wrapper .pageGuts-heading {
+    color: #BBB4AE;
+    font-size: 1.8em;
+    margin: 2%; }
+  .pageGuts-wrapper .gridImage {
+    position: relative;
+    left: 20%;
+    border: solid 2px #BBB4AE;
+    width: 15em;
+    height: 15em;
+    padding: 2%;
+    color: #BBB4AE; }
+    .pageGuts-wrapper .gridImage:hover {
+      border: solid 2px #E2492F;
+      background-color: #BBB4AE;
+      color: #E2492F; }
+      .pageGuts-wrapper .gridImage:hover .gridImage-description {
+        display: block;
+        margin-top: 6%;
+        width: 80%; }
+      .pageGuts-wrapper .gridImage:hover img {
+        display: none; }
+      .pageGuts-wrapper .gridImage:hover a {
+        text-decoration: none; }
+      .pageGuts-wrapper .gridImage:hover #viewGHRepo {
+        text-decoration: underline; }
+        .pageGuts-wrapper .gridImage:hover #viewGHRepo i {
+          font-size: .85em;
+          text-decoration: underline; }
+  .pageGuts-wrapper .gridImage-description {
+    display: none;
+    position: relative;
+    left: 12%;
+    width: 12em;
+    margin-top: 8%;
+    color: #E2492F;
+    font-size: .88em; }
+  .pageGuts-wrapper .linkButtons-bottom {
+    text-align: center;
+    margin: 5% 0;
+    font-size: 2em;
+    position: relative;
+    color: #E2492F; }
+    .pageGuts-wrapper .linkButtons-bottom a {
+      color: #E2492F;
+      text-decoration: none; }
+    .pageGuts-wrapper .linkButtons-bottom .contactInfo-phone--bottom {
+      text-decoration: none;
+      padding-top: 1.5%;
+      text-align: center;
+      font-size: .6em;
+      margin: 0 -15%; }
+      .pageGuts-wrapper .linkButtons-bottom .contactInfo-phone--bottomhover {
+        cursor: pointer;
+        text-decoration: none; }
+    .pageGuts-wrapper .linkButtons-bottom #bottomEmail {
+      font-size: .7em; }
+  .pageGuts-wrapper #pageGuts-resumeModal {
+    display: none;
+    background-color: white;
+    position: relative;
+    margin-top: -29.5%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    z-index: 15;
+    box-shadow: 0px 1px 6px #888888; }
+    .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR {
+      position: relative;
+      padding: 3% 3%;
+      left: 50%;
+      color: #BBB4AE; }
+      .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumeExitButton:hover {
+        cursor: pointer; }
+      .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumePopOut {
+        text-decoration: none;
+        color: #BBB4AE;
+        size: .6em;
+        position: relative;
+        margin-right: 9%;
+        letter-spacing: 1px; }
+      .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumePopOut:hover {
+        text-decoration: underline; }
+    .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-resumeModal--placeholder {
+      position: relative;
+      left: 1%;
+      margin: 2% 0;
+      width: 98%;
+      height: 98%; }
 
 /*# sourceMappingURL=styles.css.map */
