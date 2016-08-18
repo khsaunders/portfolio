@@ -355,6 +355,9 @@ body {
     color: #BBB4AE;
     font-size: 1.8em;
     margin: 2%; }
+  .pageGuts-wrapper .gridPad {
+    position: relative;
+    left: -.6em; }
   .pageGuts-wrapper .gridImage {
     position: relative;
     left: 20%;
@@ -397,6 +400,8 @@ body {
     .pageGuts-wrapper .linkButtons-bottom a {
       color: #E2492F;
       text-decoration: none; }
+    .pageGuts-wrapper .linkButtons-bottom .fa {
+      margin-top: 5%; }
     .pageGuts-wrapper .linkButtons-bottom .contactInfo-phone--bottom {
       text-decoration: none;
       padding-top: 1.5%;
