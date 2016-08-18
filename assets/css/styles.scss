@@ -454,6 +454,10 @@ body{
         font-size: 1.8em;
         margin: 2%;
       }
+			.gridPad{
+				position: relative;
+				left: -.6em;
+			}
       .gridImage {
         position: relative;
         left: 20%;
@@ -505,6 +509,9 @@ body{
           color: $tangerine;
 					text-decoration: none;
         }
+				.fa{
+					margin-top: 5%;
+				}
         .contactInfo-phone--bottom{
 					text-decoration: none;
           padding-top: 1.5%;
