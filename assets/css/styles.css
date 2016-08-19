@@ -35,6 +35,7 @@
   clear: both; }
 
 .grid-pad {
+  z-index: 10;
   padding-top: 20px;
   padding-left: 20px;
   /* grid-space to left */
@@ -355,16 +356,13 @@ body {
     color: #BBB4AE;
     font-size: 1.8em;
     margin: 2%; }
-  .pageGuts-wrapper .gridPad {
-    position: relative;
-    left: -.6em; }
   .pageGuts-wrapper .gridImage {
     position: relative;
-    left: 20%;
     border: solid 2px #BBB4AE;
     width: 15em;
     height: 15em;
     padding: 2%;
+    margin: 0% 10%;
     color: #BBB4AE; }
     .pageGuts-wrapper .gridImage:hover {
       border: solid 2px #E2492F;

@@ -48,6 +48,7 @@ $tangerine: #E2492F;
 }
 
 .grid-pad {
+	z-index:10;
 	padding-top: 20px;
 	padding-left: 20px; /* grid-space to left */
 	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
@@ -454,17 +455,13 @@ body{
         font-size: 1.8em;
         margin: 2%;
       }
-			.gridPad{
-				position: relative;
-				left: -.6em;
-			}
       .gridImage {
         position: relative;
-        left: 20%;
         border: solid 2px $silver;
         width: 15em;
         height: 15em;
         padding: 2%;
+				margin:0% 10%;
         color: $silver;
         &:hover{
           border: solid 2px $tangerine;
