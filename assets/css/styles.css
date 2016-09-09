@@ -302,7 +302,7 @@ body {
     font-size: 1.5em;
     margin: auto;
     border-radius: 2px;
-    color: #BBB4AE;
+    color: #87827E;
     padding: 2%; }
   .pageGuts-wrapper .pageGuts-button, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
     position: relative;
@@ -334,7 +334,7 @@ body {
     margin: -15% 5%;
     padding: 2%;
     left: 12%;
-    background-color: #BBB4AE;
+    background-color: #87827E;
     border-radius: 2px;
     box-shadow: 0px 1px 6px #888888; }
     .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--exit {
@@ -353,21 +353,22 @@ body {
       background-color: #E2492F;
       color: white; }
   .pageGuts-wrapper .pageGuts-heading {
-    color: #BBB4AE;
+    color: #87827E;
     font-size: 1.8em;
     margin: 2%; }
   .pageGuts-wrapper .gridImage {
     position: relative;
-    border: solid 2px #BBB4AE;
+    border: solid 2px #E2492F;
     width: 15em;
     height: 15em;
     padding: 2%;
     margin: 0% 10%;
-    color: #BBB4AE; }
+    color: #87827E; }
     .pageGuts-wrapper .gridImage:hover {
       border: solid 2px #E2492F;
       background-color: #BBB4AE;
-      color: #E2492F; }
+      color: #E2492F;
+      border: none; }
       .pageGuts-wrapper .gridImage:hover .gridImage-description {
         display: block;
         margin-top: 6%;
@@ -425,12 +426,12 @@ body {
       position: relative;
       padding: 3% 3%;
       left: 50%;
-      color: #BBB4AE; }
+      color: #87827E; }
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumeExitButton:hover {
         cursor: pointer; }
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumePopOut {
         text-decoration: none;
-        color: #BBB4AE;
+        color: #87827E;
         size: .6em;
         position: relative;
         margin-right: 9%;
