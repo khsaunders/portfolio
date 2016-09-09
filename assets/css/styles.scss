@@ -2,7 +2,7 @@
 // $backgroundColor:
 $mainFont: Roboto Condensed;
 $boxShadow: 0px 1px 6px #888888;
-$silver: #BBB4AE;
+$silver: #87827E;
 $white: #EEE9E4;
 $tangerine: #E2492F;
 
@@ -457,7 +457,7 @@ body{
       }
       .gridImage {
         position: relative;
-        border: solid 2px $silver;
+        border: solid 2px $tangerine;
         width: 15em;
         height: 15em;
         padding: 2%;
@@ -465,8 +465,9 @@ body{
         color: $silver;
         &:hover{
           border: solid 2px $tangerine;
-          background-color: $silver;
+          background-color: #BBB4AE;
           color: $tangerine;
+					border: none;
 					.gridImage-description{
 						display: block;
 						margin-top: 6%;
