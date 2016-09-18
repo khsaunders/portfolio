@@ -269,10 +269,10 @@ body {
     width: 25%;
     margin: -4% 5% 0 5%; }
     .headerWrapper .nameLinks .nameLinks-contact-twitter {
-      font-size: 2em;
+      font-size: 1.3em;
       padding-bottom: .5em; }
     .headerWrapper .nameLinks .nameLinks-contact-gh {
-      font-size: 1.5em;
+      font-size: 1.25em;
       padding-bottom: 1em; }
 
 .dropdownWrapper {
@@ -288,6 +288,11 @@ body {
     width: 80%;
     position: relative;
     cursor: pointer; }
+
+.headerName {
+  text-align: center;
+  color: #E2492F;
+  font-size: 3em; }
 
 #pageGuts-headshot {
   width: 12em;
