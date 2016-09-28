@@ -229,8 +229,8 @@
     width: 0;
     height: 0; } }
 body {
-  font-family: Roboto Condensed;
-  background-color: #EEE9E4;
+  font-family: Roboto, sans-serif;
+  background-color: white;
   letter-spacing: .18em; }
   body button {
     outline: none;
@@ -242,7 +242,7 @@ body {
 .headerWrapper {
   margin-top: 3%;
   width: 100%;
-  background-color: #EEE9E4; }
+  background-color: white; }
   .headerWrapper a {
     text-decoration: none;
     cursor: pointer;
@@ -278,7 +278,7 @@ body {
 .dropdownWrapper {
   display: none;
   width: 20%;
-  background-color: #EEE9E4;
+  background-color: white;
   color: #E2492F;
   margin: -1% 5%;
   padding: 1% 0; }
@@ -307,7 +307,7 @@ body {
     font-size: 1.5em;
     margin: auto;
     border-radius: 2px;
-    color: #87827E;
+    color: #070707;
     padding: 2%; }
   .pageGuts-wrapper .pageGuts-button, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
     position: relative;
@@ -315,7 +315,7 @@ body {
     border-radius: 1px;
     border: solid 2px #E2492F;
     color: #E2492F;
-    background-color: #EEE9E4;
+    background-color: white;
     letter-spacing: .18em;
     text-decoration: none;
     padding: 1% 0; }
@@ -326,10 +326,10 @@ body {
       position: relative;
       right: 2%; }
       .pageGuts-wrapper .pageGuts-button a:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a:hover {
-        color: #EEE9E4; }
+        color: white; }
     .pageGuts-wrapper .pageGuts-button:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send:hover {
       background-color: #E2492F;
-      color: #EEE9E4; }
+      color: white; }
   .pageGuts-wrapper #pageGuts-contactform {
     display: none;
     z-index: 10;
@@ -339,11 +339,11 @@ body {
     margin: -15% 5%;
     padding: 2%;
     left: 12%;
-    background-color: #87827E;
+    background-color: #070707;
     border-radius: 2px;
     box-shadow: 0px 1px 6px #888888; }
     .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--exit {
-      color: #EEE9E4;
+      color: white;
       position: relative;
       left: 98%;
       padding-bottom: 1%; }
@@ -358,7 +358,7 @@ body {
       background-color: #E2492F;
       color: white; }
   .pageGuts-wrapper .pageGuts-heading {
-    color: #87827E;
+    color: #070707;
     font-size: 1.8em;
     margin: 2%; }
   .pageGuts-wrapper .gridImage {
@@ -368,10 +368,9 @@ body {
     height: 15em;
     padding: 2%;
     margin: 0% 10%;
-    color: #87827E; }
+    color: #070707; }
     .pageGuts-wrapper .gridImage:hover {
       border: solid 2px #E2492F;
-      background-color: #BBB4AE;
       color: #E2492F;
       border: none; }
       .pageGuts-wrapper .gridImage:hover .gridImage-description {
@@ -431,12 +430,12 @@ body {
       position: relative;
       padding: 3% 3%;
       left: 50%;
-      color: #87827E; }
+      color: #070707; }
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumeExitButton:hover {
         cursor: pointer; }
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumePopOut {
         text-decoration: none;
-        color: #87827E;
+        color: #070707;
         size: .6em;
         position: relative;
         margin-right: 9%;

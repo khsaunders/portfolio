@@ -1,9 +1,9 @@
 //variables
 // $backgroundColor:
-$mainFont: Roboto Condensed;
+$mainFont: Roboto, sans-serif;
 $boxShadow: 0px 1px 6px #888888;
-$silver: #87827E;
-$white: #EEE9E4;
+$silver: #070707;
+$white: white;
 $tangerine: #E2492F;
 
 /*
@@ -470,7 +470,6 @@ body{
         color: $silver;
         &:hover{
           border: solid 2px $tangerine;
-          background-color: #BBB4AE;
           color: $tangerine;
 					border: none;
 					.gridImage-description{
