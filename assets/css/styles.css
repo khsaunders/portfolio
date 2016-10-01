@@ -4,10 +4,10 @@
   Author - Dallas Bass
   Site - http://dallasbass.com
 */
-[class*='grid'],
+.grid:after,
 [class*='col-'],
-[class*='mobile-'],
-.grid:after {
+[class*='grid'],
+[class*='mobile-'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -49,22 +49,27 @@
 .col-1-1 {
   width: 100%; }
 
-.col-2-3, .col-8-12 {
+.col-2-3,
+.col-8-12 {
   width: 66.66%; }
 
-.col-1-2, .col-6-12 {
+.col-1-2,
+.col-6-12 {
   width: 50%; }
 
-.col-1-3, .col-4-12 {
+.col-1-3,
+.col-4-12 {
   width: 33.33%; }
 
-.col-1-4, .col-3-12 {
+.col-1-4,
+.col-3-12 {
   width: 25%; }
 
 .col-1-5 {
   width: 20%; }
 
-.col-1-6, .col-2-12 {
+.col-1-6,
+.col-2-12 {
   width: 16.667%; }
 
 .col-1-7 {
@@ -102,22 +107,27 @@
   width: 58.33%; }
 
 /* Pushing blocks */
-.push-2-3, .push-8-12 {
+.push-2-3,
+.push-8-12 {
   margin-left: 66.66%; }
 
-.push-1-2, .push-6-12 {
+.push-1-2,
+.push-6-12 {
   margin-left: 50%; }
 
-.push-1-3, .push-4-12 {
+.push-1-3,
+.push-4-12 {
   margin-left: 33.33%; }
 
-.push-1-4, .push-3-12 {
+.push-1-4,
+.push-3-12 {
   margin-left: 25%; }
 
 .push-1-5 {
   margin-left: 20%; }
 
-.push-1-6, .push-2-12 {
+.push-1-6,
+.push-2-12 {
   margin-left: 16.667%; }
 
 .push-1-7 {
@@ -172,22 +182,27 @@
   .mobile-col-1-1 {
     width: 100%; }
 
-  .mobile-col-2-3, .mobile-col-8-12 {
+  .mobile-col-2-3,
+  .mobile-col-8-12 {
     width: 66.66%; }
 
-  .mobile-col-1-2, .mobile-col-6-12 {
+  .mobile-col-1-2,
+  .mobile-col-6-12 {
     width: 50%; }
 
-  .mobile-col-1-3, .mobile-col-4-12 {
+  .mobile-col-1-3,
+  .mobile-col-4-12 {
     width: 33.33%; }
 
-  .mobile-col-1-4, .mobile-col-3-12 {
+  .mobile-col-1-4,
+  .mobile-col-3-12 {
     width: 25%; }
 
   .mobile-col-1-5 {
     width: 20%; }
 
-  .mobile-col-1-6, .mobile-col-2-12 {
+  .mobile-col-1-6,
+  .mobile-col-2-12 {
     width: 16.667%; }
 
   .mobile-col-1-7 {
@@ -231,7 +246,7 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: white;
-  letter-spacing: .18em; }
+  letter-spacing: 0.18em; }
   body button {
     outline: none;
     border: none; }
@@ -251,40 +266,50 @@ body {
     font-size: 1.8em;
     position: relative;
     margin: 2% 5% 0 0;
-    left: 83%;
     vertical-align: top;
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 5.25%; }
     .headerWrapper .linkButtons a {
-      padding-right: .5em; }
+      padding-right: 0.35em; }
+    .headerWrapper .linkButtons #twitterHandle {
+      margin: 2.5% 0;
+      font-size: 0.65em; }
     .headerWrapper .linkButtons .contactInfo-phone {
-      margin-top: .8em;
-      font-size: .5em;
+      margin-top: 4%;
+      font-size: 0.6em;
       color: #E2492F;
       text-decoration: none; }
       .headerWrapper .linkButtons .contactInfo-phonehover {
         cursor: pointer;
         text-decoration: none; }
-  .headerWrapper .nameLinks {
-    position: relative;
-    width: 25%;
-    margin: -4% 5% 0 5%; }
-    .headerWrapper .nameLinks .nameLinks-contact-twitter {
-      font-size: 1.3em;
-      padding-bottom: .5em; }
-    .headerWrapper .nameLinks .nameLinks-contact-gh {
-      font-size: 1.25em;
-      padding-bottom: 1em; }
 
-.dropdownWrapper {
-  display: none;
+.fa-bars {
+  position: relative;
+  left: 90%;
+  color: #E2492F;
+  font-size: 3em;
+  margin-top: 2%; }
+  .fa-barshover {
+    cursor: pointer;
+    text-decoration: none; }
+
+.dropdownWrapper .dropdownMenu {
+  display: none; }
+.dropdownWrapper .dropdownMenu.showing {
+  display: block;
+  font-size: 1em;
+  color: #070707;
+  position: relative;
+  left: 77%;
+  display: block;
   width: 20%;
   background-color: white;
   color: #E2492F;
   margin: -1% 5%;
   padding: 1% 0; }
-  .dropdownWrapper .dropdownMenu-links-cats, .dropdownWrapper .dropdownMenu-links-cats--contact, .dropdownWrapper .dropdownMenu-links-cats--resume {
+  .dropdownWrapper .dropdownMenu.showing .dropdownMenu-links-cats, .dropdownWrapper .dropdownMenu.showing .dropdownMenu-links-cats--contact, .dropdownWrapper .dropdownMenu.showing .dropdownMenu-links-cats--resume {
     padding: 3% 0;
-    text-align: left;
+    text-align: right;
     width: 80%;
     position: relative;
     cursor: pointer; }
@@ -316,7 +341,7 @@ body {
     border: solid 2px #E2492F;
     color: #E2492F;
     background-color: white;
-    letter-spacing: .18em;
+    letter-spacing: 0.18em;
     text-decoration: none;
     padding: 1% 0; }
     .pageGuts-wrapper .pageGuts-button a, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a {
@@ -341,14 +366,14 @@ body {
     left: 12%;
     background-color: #070707;
     border-radius: 2px;
-    box-shadow: 0px 1px 6px #888888; }
+    box-shadow: 0 1px 6px #888888; }
     .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--exit {
       color: white;
       position: relative;
       left: 98%;
       padding-bottom: 1%; }
     .pageGuts-wrapper #pageGuts-contactform .contactForm-small, .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
-      padding: .5%;
+      padding: 0.5%;
       margin: 1% 0;
       width: 98%; }
     .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
@@ -367,7 +392,7 @@ body {
     width: 15em;
     height: 15em;
     padding: 2%;
-    margin: 0% 10%;
+    margin: 0 10%;
     color: #070707; }
     .pageGuts-wrapper .gridImage:hover {
       border: solid 2px #E2492F;
@@ -384,7 +409,7 @@ body {
       .pageGuts-wrapper .gridImage:hover #viewGHRepo {
         text-decoration: underline; }
         .pageGuts-wrapper .gridImage:hover #viewGHRepo i {
-          font-size: .85em;
+          font-size: 0.85em;
           text-decoration: underline; }
   .pageGuts-wrapper .gridImage-description {
     display: none;
@@ -393,7 +418,7 @@ body {
     width: 12em;
     margin-top: 8%;
     color: #E2492F;
-    font-size: .88em; }
+    font-size: 0.88em; }
   .pageGuts-wrapper .linkButtons-bottom {
     text-align: center;
     margin: 5% 0;
@@ -409,13 +434,13 @@ body {
       text-decoration: none;
       padding-top: 1.5%;
       text-align: center;
-      font-size: .6em;
+      font-size: 0.6em;
       margin: 0 -15%; }
       .pageGuts-wrapper .linkButtons-bottom .contactInfo-phone--bottomhover {
         cursor: pointer;
         text-decoration: none; }
     .pageGuts-wrapper .linkButtons-bottom #bottomEmail {
-      font-size: .7em; }
+      font-size: 0.7em; }
   .pageGuts-wrapper #pageGuts-resumeModal {
     display: none;
     background-color: white;
@@ -425,10 +450,10 @@ body {
     width: 60%;
     height: 80%;
     z-index: 15;
-    box-shadow: 0px 1px 6px #888888; }
+    box-shadow: 0 1px 6px #888888; }
     .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR {
       position: relative;
-      padding: 3% 3%;
+      padding: 3%;
       left: 50%;
       color: #070707; }
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumeExitButton:hover {
@@ -436,7 +461,7 @@ body {
       .pageGuts-wrapper #pageGuts-resumeModal #pageGuts-button--exitR #resumePopOut {
         text-decoration: none;
         color: #070707;
-        size: .6em;
+        size: 0.6em;
         position: relative;
         margin-right: 9%;
         letter-spacing: 1px; }
