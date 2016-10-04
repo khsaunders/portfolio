@@ -1,11 +1,9 @@
-console.log("testing, testing");
 
 //dropdown menu
 
 $(".fa-bars, .dropdownMenu").mouseenter(function(e){
   e.preventDefault();
   $(".dropdownMenu").addClass("showing");
-  console.log('hoveringgg');
 });
 
 $(".fa-bars, .dropdownMenu").mouseleave(function(e){
@@ -13,14 +11,14 @@ $(".fa-bars, .dropdownMenu").mouseleave(function(e){
   $(".dropdownMenu").removeClass("showing");
 });
 
-//styling events for
+//temporarily disabled contact form--need PHP to make functional
 
-$('#pageGuts-button--contact, .dropdownMenu-links-cats--contact').click(function(e){
-  e.preventDefault();
-  $('#pageGuts-contactform').css('display', 'block');
-});
-
-$('#pageGuts-button--send, #pageGuts-button--exit').click(function(e){
-  e.preventDefault();
-  $('#pageGuts-contactform').css('display', 'none');
-});
+// $('#pageGuts-button--contact, .dropdownMenu-links-cats--contact').click(function(e){
+//   e.preventDefault();
+//   $('#pageGuts-contactform').css('display', 'block');
+// });
+//
+// $('#pageGuts-button--send, #pageGuts-button--exit').click(function(e){
+//   e.preventDefault();
+//   $('#pageGuts-contactform').css('display', 'none');
+// });

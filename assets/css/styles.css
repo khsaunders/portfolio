@@ -246,7 +246,8 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: white;
-  letter-spacing: 0.18em; }
+  letter-spacing: 0.18em;
+  width: auto; }
   body button {
     outline: none;
     border: none; }
@@ -279,9 +280,15 @@ body {
       font-size: 0.6em;
       color: #E2492F;
       text-decoration: none; }
-      .headerWrapper .linkButtons .contactInfo-phonehover {
+      .headerWrapper .linkButtons .contactInfo-phone:hover {
         cursor: pointer;
         text-decoration: none; }
+
+.headerDesc {
+  width: 20%;
+  color: #070707;
+  position: relative;
+  left: 41%; }
 
 .fa-bars {
   position: relative;
@@ -289,7 +296,7 @@ body {
   color: #E2492F;
   font-size: 3em;
   margin-top: 2%; }
-  .fa-barshover {
+  .fa-bars:hover {
     cursor: pointer;
     text-decoration: none; }
 
@@ -323,65 +330,36 @@ body {
   width: 12em;
   height: 12em;
   position: relative;
-  left: 40%; }
+  left: 45%;
+  padding-bottom: 2%; }
+
+.photoComp {
+  width: 100%;
+  margin: 10% 0;
+  padding: 0;
+  position: relative; }
+  .photoComp:hover {
+    background-color: #E2492F;
+    cursor: pointer; }
+
+.pageGuts-button {
+  position: relative;
+  left: 46.85%;
+  background-color: white;
+  margin-top: 2%; }
+  .pageGuts-button a {
+    background-color: white;
+    text-decoration: none;
+    color: #E2492F;
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px; }
+    .pageGuts-button a:hover {
+      text-decoration: underline; }
 
 .pageGuts-wrapper {
   width: 80%;
   margin: auto; }
-  .pageGuts-wrapper .pageGuts-bio {
-    font-size: 1.5em;
-    margin: auto;
-    border-radius: 2px;
-    color: #070707;
-    padding: 2%; }
-  .pageGuts-wrapper .pageGuts-button, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
-    position: relative;
-    left: 80%;
-    border-radius: 1px;
-    border: solid 2px #E2492F;
-    color: #E2492F;
-    background-color: white;
-    letter-spacing: 0.18em;
-    text-decoration: none;
-    padding: 1% 0; }
-    .pageGuts-wrapper .pageGuts-button a, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a {
-      text-decoration: none;
-      color: #E2492F;
-      padding: 15% 32%;
-      position: relative;
-      right: 2%; }
-      .pageGuts-wrapper .pageGuts-button a:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send a:hover {
-        color: white; }
-    .pageGuts-wrapper .pageGuts-button:hover, .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send:hover {
-      background-color: #E2492F;
-      color: white; }
-  .pageGuts-wrapper #pageGuts-contactform {
-    display: none;
-    z-index: 10;
-    position: relative;
-    width: 60%;
-    height: 50%;
-    margin: -15% 5%;
-    padding: 2%;
-    left: 12%;
-    background-color: #070707;
-    border-radius: 2px;
-    box-shadow: 0 1px 6px #888888; }
-    .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--exit {
-      color: white;
-      position: relative;
-      left: 98%;
-      padding-bottom: 1%; }
-    .pageGuts-wrapper #pageGuts-contactform .contactForm-small, .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
-      padding: 0.5%;
-      margin: 1% 0;
-      width: 98%; }
-    .pageGuts-wrapper #pageGuts-contactform .contactForm-large {
-      height: 10em; }
-    .pageGuts-wrapper #pageGuts-contactform #pageGuts-button--send {
-      left: 88.7%;
-      background-color: #E2492F;
-      color: white; }
   .pageGuts-wrapper .pageGuts-heading {
     color: #070707;
     font-size: 1.8em;

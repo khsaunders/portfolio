@@ -256,6 +256,7 @@ body {
 	font-family: $mainFont;
 	background-color: $white;
 	letter-spacing: 0.18em;
+	width: auto;
 	button {
 		outline: none;
 		border: none;
@@ -293,12 +294,18 @@ body {
 			font-size: 0.6em;
 			color: $tangerine;
 			text-decoration: none;
-			&hover {
+			&:hover {
 				cursor: pointer;
 				text-decoration: none;
 			}
 		}
 	}
+}
+.headerDesc{
+	width: 20%;
+	color: $silver;
+	position: relative;
+	left: 41%;
 }
 .fa-bars{
 position: relative;
@@ -306,7 +313,7 @@ left: 90%;
 color: $tangerine;
 font-size: 3em;
 margin-top: 2%;
-&hover{
+&:hover{
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -351,77 +358,39 @@ margin-top: 2%;
 	width: 12em;
 	height: 12em;
 	position: relative;
-	left: 40%;
+	left: 45%;
+	padding-bottom: 2%;
+}
+.photoComp{
+	width: 100%;
+	margin: 10% 0;
+	padding: 0;
+	position: relative;
+	&:hover{
+		background-color: $tangerine;
+		cursor: pointer;
+	}
+}
+.pageGuts-button {
+	position: relative;
+	left: 46.85%;
+	background-color: $white;
+	margin-top: 2%;
+	a {
+		background-color: $white;
+		text-decoration: none;
+		color: $tangerine;
+		position: relative;
+		font-size: 2em;
+		letter-spacing: 2px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .pageGuts-wrapper {
 	width: 80%;
 	margin: auto;
-	.pageGuts-bio {
-		font-size: 1.5em;
-		margin: auto;
-		border-radius: 2px;
-		color: $silver;
-		padding: 2%;
-	}
-	.pageGuts-button {
-		position: relative;
-		left: 80%;
-		border-radius: 1px;
-		border: solid 2px $tangerine;
-		color: $tangerine;
-		background-color: $white;
-		letter-spacing: 0.18em;
-		text-decoration: none;
-		padding: 1% 0;
-		a {
-			text-decoration: none;
-			color: $tangerine;
-			padding: 15% 32%;
-			position: relative;
-			right: 2%;
-			&:hover {
-				color: $white;
-			}
-		}
-		&:hover {
-			background-color: $tangerine;
-			color: $white;
-		}
-	}
-	#pageGuts-contactform {
-		display: none;
-		z-index: 10;
-		position: relative;
-		width: 60%;
-		height: 50%;
-		margin: -15% 5%;
-		padding: 2%;
-		left: 12%;
-		background-color: $silver;
-		border-radius: 2px;
-		box-shadow: $boxShadow;
-		#pageGuts-button--exit {
-			color: $white;
-			position: relative;
-			left: 98%;
-			padding-bottom: 1%;
-		}
-		.contactForm-small {
-			padding: 0.5%;
-			margin: 1% 0;
-			width: 98%;
-		}
-		.contactForm-large {
-			@extend .contactForm-small;
-			height: 10em;
-		}
-		#pageGuts-button--send {
-			@extend .pageGuts-button;
-			left: 88.7%;
-			background-color: $tangerine;
-			color: white;
-		}
-	}
 	.pageGuts-heading {
 		color: $silver;
 		font-size: 1.8em;
