@@ -15,6 +15,7 @@
 
     <!--HEADER (consists of two columns for navigation and contact info)-->
 
+
     <div class="headerWrapper">
 
 
@@ -57,7 +58,9 @@
                                     bio
                                 </li>
                                 <li class="dropdownMenu-links-cats--resume">
+                                  <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank">
                                     resume
+                                  </a>
                                 </li>
                                 <li class="dropdownMenu-links-cats--contact">
                                     contact
@@ -76,22 +79,34 @@
             <img src="assets/images/kaitlinCartoonOrange.png" id="pageGuts-headshot">
         </div>
 
-        <h1 class="headerName">Kaitlin Saunders</h1>
-        <h2 class="headerDesc"> Front-end Engineer | UX Designer</h2>
+        <span id="headerNameDesc">
+          <h1 class="headerName">Kaitlin Saunders</h1>
+          <ul>
+            <li class="headerDesc">
+              Front-end Engineer
+            </li>
+            <li class="headerDesc">
+              UX Designer
+            </li>
+      </span>
 
         <!--resume button-->
 
-            <button class="pageGuts-button" id="pageGuts-button--resume">
+            <!-- <button class="pageGuts-button" id="pageGuts-button--resume">
                 <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank" id="resumePopOut">
-            RESUME</button>
-          </a>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                  RESUME</button>
+          </a> -->
 
           <!--project list-->
 
-          <div id="projectList">
-            <ul>
+          <div>
+            <ul class="projectList">
               <li>
                 <img class="photoComp" src="assets/images/pearlComp1336.jpg">
+              </li>
+              <li>
+                <img class="photoComp" src="assets/images/do_itCompilation1336.jpg">
               </li>
 
                 <!--project grid-->
