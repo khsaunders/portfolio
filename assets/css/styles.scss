@@ -300,6 +300,15 @@ body {
 			}
 		}
 	}
+	#homeNav{
+		font-size: 1.25em;
+		color: $tangerine;
+		position: relative;
+		left: 70%;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
 .fa-bars{
 position: relative;
@@ -384,6 +393,9 @@ transition-delay: 2s;
 			}
 		}
 	}
+	.fa-external-link-square{
+		display: none;
+	}
 
 .pageGuts-button {
 	position: relative;
@@ -399,6 +411,10 @@ transition-delay: 2s;
 		letter-spacing: 2px;
 		&:hover {
 			text-decoration: underline;
+			.fa-external-link-square{
+				display: inline-block;
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -516,5 +532,37 @@ transition-delay: 2s;
 			width: 98%;
 			height: 98%;
 		}
+	}
+}
+.projectPageWrapper{
+	width: 90%;
+	.projectPageDesc{
+		display: none;
+	}
+	.projectPageDesc.showing{
+		display: block;
+		ul{
+			margin: auto;
+			li{
+				padding: 5%;
+				background-color: $tangerine;
+				color: $white;
+			}
+		}
+	}
+	.wireFrameMain{
+		position: relative;
+		display: block;
+		margin: auto;
+		&:hover{
+			opacity: .25;
+			cursor: pointer;
+		}
+	}
+	#pearlFrame{
+		left:6.45%;
+	}
+	#do_itFrame{
+		left:6.45%;
 	}
 }

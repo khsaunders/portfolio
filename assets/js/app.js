@@ -11,6 +11,16 @@ $(".fa-bars, .dropdownMenu").mouseleave(function(e){
   $(".dropdownMenu").removeClass("showing");
 });
 
+$('.wireFrameMain').moueseenter(function(e){
+  e.preventDefault();
+  $('projectPageDesc').addClass('showing');
+});
+
+$('.wireFrameMain').moueseenter(function(e){
+  e.preventDefault();
+  $('projectPageDesc').removeClass('showing');
+});
+
 //temporarily disabled contact form--need PHP to make functional
 
 // $('#pageGuts-button--contact, .dropdownMenu-links-cats--contact').click(function(e){
