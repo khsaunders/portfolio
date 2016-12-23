@@ -364,12 +364,15 @@ transition-delay: 2s;
 		display: block;
 		margin: auto;
 	}
-	.headerDesc{
-			width: 30%;
-			color: $silver;
-			display: block;
-			margin: auto;
-			text-align: center;
+	.headerDescUL{
+		margin-bottom: 3%;
+		.headerDesc{
+				width: 30%;
+				color: $silver;
+				display: block;
+				margin: auto;
+				text-align: center;
+		}
 	}
 }
 #pageGuts-headshot {
