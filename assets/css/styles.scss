@@ -304,7 +304,6 @@ body {
 		font-size: 1.25em;
 		color: $tangerine;
 		position: relative;
-		left: 70%;
 		&:hover{
 			text-decoration: underline;
 		}
@@ -386,10 +385,26 @@ transition-delay: 2s;
 			margin: 5% 0;
 			padding: 0;
 			position: relative;
-			&:hover{
-				border-bottom: solid .25em $tangerine;
-				background-color: $tangerine;
+			z-index: 1;
+			&:hover, .projectTitle{
+				// border-bottom: solid .25em $tangerine;
+				// background-color: $tangerine;
 				cursor: pointer;
+			}
+		}
+		.projectTitle{
+			font-family: $mainFont;
+			font-weight: 700;
+			width: 100%;
+			position: absolute;
+			margin: -2.5em 0 0 .5em;
+			z-index: 10;
+			color: $white;
+			font-size: 2.85em;
+			text-align: left;
+
+			a{
+				text-decoration: none;
 			}
 		}
 	}
@@ -537,9 +552,12 @@ transition-delay: 2s;
 .projectPageWrapper{
 	width: 90%;
 	.projectPageDesc{
-		display: none;
+		visibility: hidden;
 	}
 	.projectPageDesc.showing{
+		background-color: $tangerine;
+		color: $white;
+		visibility: visible;
 		display: block;
 		ul{
 			margin: auto;

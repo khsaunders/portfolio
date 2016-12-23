@@ -11,24 +11,40 @@ $(".fa-bars, .dropdownMenu").mouseleave(function(e){
   $(".dropdownMenu").removeClass("showing");
 });
 
-$('.wireFrameMain').moueseenter(function(e){
+//individual project page wireframe hovers
+
+$('.wireFrameMain').mouseenter(function(e){
   e.preventDefault();
-  $('projectPageDesc').addClass('showing');
+  $('.projectPageDesc').addClass('showing');
 });
 
-$('.wireFrameMain').moueseenter(function(e){
+$('.wireFrameMain').mouseleave(function(e){
   e.preventDefault();
-  $('projectPageDesc').removeClass('showing');
+  $('.projectPageDesc').removeClass('showing');
 });
 
-//temporarily disabled contact form--need PHP to make functional
+//Ugly wet code :(
 
-// $('#pageGuts-button--contact, .dropdownMenu-links-cats--contact').click(function(e){
-//   e.preventDefault();
-//   $('#pageGuts-contactform').css('display', 'block');
-// });
-//
-// $('#pageGuts-button--send, #pageGuts-button--exit').click(function(e){
-//   e.preventDefault();
-//   $('#pageGuts-contactform').css('display', 'none');
-// });
+//title color change on picture hover -- Pearl
+
+$('#pearlLink').mouseover(function(e){
+  e.preventDefault();
+  $('#projectPearl').css('color', '#E2492F');
+});
+
+$('#pearlLink').mouseout(function(e){
+  e.preventDefault();
+  $('#projectPearl').css('color', 'white');
+});
+
+//title color change on picture hover -- do_it
+
+$('#doItLink').mouseover(function(e){
+  e.preventDefault();
+  $('#projectDoIt').css('color', '#E2492F');
+});
+
+$('#doItLink').mouseout(function(e){
+  e.preventDefault();
+  $('#projectDoIt').css('color', 'white');
+});
