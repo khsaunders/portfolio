@@ -13,75 +13,58 @@
 
 <body>
 
-    <!--HEADER (consists of two columns for navigation and contact info)-->
+    <!--HEADER (consists of three columns for navigation and contact info)-->
+
+    <header>
+        <div class="headerWrapper">
 
 
-    <div class="headerWrapper">
+            <!--header left column-->
 
-
-        <!--contact text links right corner-->
-        <div class="grid grid-pad">
-            <div class="col-1-2" id="topContact">
-                <div class="content">
-                    <div class="linkButtons">
-                        <ul>
-                            <li>
-                                <a href="https://github.com/khsaunders" target="_blank">
-                                    <i class="fa fa-github" aria-hidden="true"></i></a>
-                                <a href="https://www.linkedin.com/in/kaitlin-saunders" target="_blank">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="mailto:kaitlinhsaunders@gmail.com">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                            </li>
-                            <li id="twitterHandle">
-                                <a href="https://www.twitter.com/kaitlinWhoCodes" target="_blank">
-                    @kaitlinWhoCodes
-                  </a>
-                            </li>
-                            <li>
-                                <p class="contactInfo-phone"><a href="tel:919-797-9315">(919) 797-9315</a></p>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="col left">
+                <span class="leftMenu">
+                              <a href="bio.html">
+                                About |
+                              </span>
+                </li>
+                <span class="leftMenu">
+                              <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank">
+                                Resume |
+                              </a>
+                            </span>
+                <span class="leftMenu">
+                                 Contact
+                        </span>
             </div>
 
-            <!--dropdown nav-->
+            <!--header middle column-->
 
-            <div class="col-1-2" id="topNav">
-                <div class="content">
-                  <i id="dropdownIcon" class="fa fa-bars" aria-hidden="true"></i>
-                    <div class="dropdownWrapper">
-                        <div class="dropdownMenu">
-                            <ul id="dropdownMenu-links">
-                                <li class="dropdownMenu-links-cats">
-                                  <a href="bio.html">
-                                    bio
-                                  </a>
-                                </li>
-                                <li class="dropdownMenu-links-cats--resume">
-                                  <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank">
-                                    resume
-                                  </a>
-                                </li>
-                                <li class="dropdownMenu-links-cats--contact">
-                                    contact
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="col middle">
+                <img src="assets/images/kaitlinCartoonOrange.png" id="pageGuts-headshot">
             </div>
-        </div>
-      </div>
 
-        <!--PAGE-->
+            <!--header right column-->
 
-        <div>
-            <img src="assets/images/kaitlinCartoonOrange.png" id="pageGuts-headshot">
-        </div>
+            <div class="col right">
+                <div class="linkButtons">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/khsaunders" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/kaitlin-saunders" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="mailto:kaitlinhsaunders@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <p class="contactInfo-phone"><a href="tel:919-797-9315">(919) 797-9315</a></p>
+                    </ul>
+                </div>
 
-        <span id="headerNameDesc">
+    </header>
+    <!--PAGE-->
+
+    <span id="headerNameDesc">
           <h1 class="headerName">Kaitlin Saunders</h1>
           <ul class="headerDescUL">
             <li class="headerDesc">
@@ -93,46 +76,46 @@
           </ul>
       </span>
 
-        <!--resume button-->
+    <!--resume button-->
 
-            <!-- <button class="pageGuts-button" id="pageGuts-button--resume">
+    <!-- <button class="pageGuts-button" id="pageGuts-button--resume">
                 <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank" id="resumePopOut">
                   <i class="fa fa-external-link" aria-hidden="true"></i>
                   RESUME</button>
           </a> -->
 
-          <!--project list-->
+    <!--project list-->
 
-          <div>
-            <ul class="projectList">
-              <li>
+    <div>
+        <ul class="projectList">
+            <li>
                 <a href="pearl.html" id="pearlLink">
-                <img class="photoComp" src="assets/images/pearlComp1336.jpg" style="background-image">
-                <h2>
+                    <img class="photoComp" src="assets/images/pearlComp1336.jpg" style="background-image">
+                    <h2>
                   <span class="projectTitle" id="projectPearl">PEARL
                   </span>
                   </h2>
-              </a>
-              </li>
-              <li>
+                </a>
+            </li>
+            <li>
                 <a href="do_it.html" id="doItLink">
-                <img class="photoComp" src="assets/images/do_itCompilation1336.jpg">
-                <h2>
+                    <img class="photoComp" src="assets/images/do_itCompilation1336.jpg">
+                    <h2>
                   <span class="projectTitle" id="projectDoIt">DO_IT
                   </span>
                   </h2>
-              </a>
-              </li>
-              <li>
+                </a>
+            </li>
+            <li>
                 <img class="photoComp" src="assets/images/modalsCompilation1336.jpg">
                 <h2>
                   <span class="projectTitle" id="projectWidgets">WIDGETS
                   </span>
                   </h2>
-              </li>
+            </li>
 
 
-                <div class="pageGuts-wrapper">
+            <div class="pageGuts-wrapper">
 
                 <div class="pageGuts-footer">
                     <div class="linkButtons-bottom">

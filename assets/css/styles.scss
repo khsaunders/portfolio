@@ -58,7 +58,7 @@ $tangerine: #E2492F;
 }
 .col-2-3,
 .col-8-12 {
-	width: 66.66%;
+	width: 33.33%;
 }
 .col-1-2,
 .col-6-12 {
@@ -112,6 +112,10 @@ $tangerine: #E2492F;
 }
 .col-7-12 {
 	width: 58.33%;
+}
+
+.col-3-3{
+	width: 33.33%;
 }
 /* Pushing blocks */
 .push-2-3,
@@ -257,6 +261,18 @@ body {
 	background-color: $white;
 	letter-spacing: 0.18em;
 	width: auto;
+	header{
+		overflow-x: hidden;
+		overflow-y: hidden;
+		box-shadow: 0 0px 3px #888888;
+		padding-bottom: 1%;
+		#gridRight{
+			float: right;
+			text-align: right;
+			padding-right: 15%;
+			width: 33.33%;
+		}
+	}
 	button {
 		outline: none;
 		border: none;
@@ -267,28 +283,48 @@ body {
 	}
 }
 .headerWrapper {
-	margin-top: 3%;
-	width: 100%;
+	margin: auto;
+	width: 93%;
+	padding: 1% 0 0 0;
 	background-color: $white;
+	display: block;
 	a {
 		text-decoration: none;
 		cursor: pointer;
 		color: $tangerine;
 	}
-	.linkButtons {
-		font-size: 1.8em;
+	.col{
+		width: 33.33%;
+	}
+	.left{
+		float: left;
+		display: flex;
 		position: relative;
-		margin: 2% 5% 0 0;
+		padding: 2% 0 0 0;
+		.leftMenu{
+			padding: 0 1% 1% 0;
+		}
+	}
+	.middle{
+		display: inline-flex;
+		#pageGuts-headshot {
+			width: 4em;
+			height: 4em;
+			display: flex;
+			padding-bottom: 2%;
+			margin: auto;
+		}
+	}
+	.right {
+		font-size: 1.8em;
+		text-align: right;
+		position: relative;
 		vertical-align: top;
 		display: inline-block;
-		padding-left: 5.25%;
-		a {
-			padding-right: 0.35em;
-		}
-		#twitterHandle {
-			margin: 2.5% 0;
-			font-size: 0.65em;
-		}
+		float: right;
+		// a {
+		// 	padding-right: 0.35em;
+		// }
 		.contactInfo-phone {
 			margin-top: 4%;
 			font-size: 0.6em;
@@ -321,40 +357,8 @@ transition-delay: 2s;
 	text-decoration: none;
 }
 }
-.dropdownWrapper {
-	.dropdownMenu{
-		visibility: hidden;
-	}
-	.dropdownMenu.showing{
-		visibility: visible;
-		display: block;
-		font-size: 1em;
-		color: $silver;
-		position: relative;
-		left: 77%;
-		display: block;
-		width: 20%;
-		background-color: $white;
-		color: $tangerine;
-		margin: -1% 5%;
-		padding: 1% 0;
-		.dropdownMenu-links-cats {
-			padding: 3% 0;
-			text-align: right;
-			width: 80%;
-			position: relative;
-			cursor: pointer;
-		}
-		.dropdownMenu-links-cats--contact {
-			@extend .dropdownMenu-links-cats;
-		}
-		.dropdownMenu-links-cats--resume {
-			@extend .dropdownMenu-links-cats;
-		}
-	}
-}
 #headerNameDesc{
-	margin: 0 auto 3% auto;
+	margin: 1.5% auto 3% auto;
 	align-items: center;
 	display: block;
 	.headerName {
@@ -374,13 +378,6 @@ transition-delay: 2s;
 				text-align: center;
 		}
 	}
-}
-#pageGuts-headshot {
-	width: 12em;
-	height: 12em;
-	display: flex;
-	margin: auto;
-	padding-bottom: 2%;
 }
 .projectList{
 		.photoComp{
