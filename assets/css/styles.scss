@@ -282,7 +282,75 @@ body {
 		border: none;
 	}
 }
-.headerWrapper {
+#contentPage{
+	margin: -10% auto;
+	width: 100%;
+	padding: 1% 0 0 0;
+	background-color: $white;
+	display: block;
+	position: fixed;
+	z-index: 10;
+	box-shadow: 0 0px 3px #888888;
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		color: $tangerine;
+	}
+	.col{
+		width: 30%;
+	}
+	.left{
+		margin-left: 5%;
+		float: left;
+		display: flex;
+		position: relative;
+		padding: 2% 0 0 0;
+		.leftMenu{
+			padding: 0 1% 1% 0;
+		}
+	}
+	.middle{
+		display: inline-flex;
+		#pageGuts-headshot {
+			width: 4em;
+			height: 4em;
+			display: flex;
+			padding-bottom: 2%;
+			margin: auto;
+		}
+	}
+	.right {
+		margin-right: 5%;
+		font-size: 1.8em;
+		text-align: right;
+		position: relative;
+		vertical-align: top;
+		display: inline-block;
+		float: right;
+		// a {
+		// 	padding-right: 0.35em;
+		// }
+		.contactInfo-phone {
+			margin-top: 4%;
+			font-size: 0.6em;
+			color: $tangerine;
+			text-decoration: none;
+			&:hover {
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+	#homeNav{
+		font-size: 1.25em;
+		color: $tangerine;
+		position: relative;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.headerWrapper{
 	margin: auto;
 	width: 100%;
 	padding: 1% 0 0 0;
@@ -335,6 +403,7 @@ body {
 			font-size: 0.6em;
 			color: $tangerine;
 			text-decoration: none;
+			padding-bottom: 3%;
 			&:hover {
 				cursor: pointer;
 				text-decoration: none;
@@ -552,11 +621,16 @@ transition-delay: 2s;
 		}
 	}
 }
-.projectPageWrapper{
-	width: 90%;
-	.projectPageDesc{
-		visibility: hidden;
-	}
+#bioContents{
+	margin: 10% auto;
+}
+#projectHeaderWrapper{
+	position: relative;
+	width: 100%;
+	box-shadow: none;
+	// .projectPageDesc{
+	// 	visibility: hidden;
+	// }
 	.projectPageDesc.showing{
 		background-color: $tangerine;
 		color: $white;
@@ -571,6 +645,9 @@ transition-delay: 2s;
 			}
 		}
 	}
+	#homeNav{
+		padding-bottom: 2%;
+	}
 	.wireFrameMain{
 		position: relative;
 		display: block;
@@ -582,6 +659,7 @@ transition-delay: 2s;
 	}
 	#pearlFrame{
 		left:6.45%;
+		padding-top: 10%;
 	}
 	#do_itFrame{
 		left:6.45%;
