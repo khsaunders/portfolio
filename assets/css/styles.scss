@@ -612,26 +612,27 @@ transition-delay: 2s;
 				text-decoration: underline;
 			}
 		}
-		#pageGuts-resumeModal--placeholder {
-			position: relative;
-			left: 1%;
-			margin: 2% 0;
-			width: 98%;
-			height: 98%;
-		}
 	}
 }
 #bioContents{
 	margin: 10% auto;
 }
-#projectHeaderWrapper{
+#projectPageHeader{
+	margin-bottom: 3%;
+	box-shadow: 0 0px 3px #888888;
+}
+.wireFrameMain{
 	position: relative;
-	width: 100%;
-	box-shadow: none;
-	// .projectPageDesc{
-	// 	visibility: hidden;
-	// }
-	.projectPageDesc.showing{
+	display: block;
+	margin: 10% auto 2% auto;
+	height: 33em;
+	&:hover{
+		opacity: .25;
+		cursor: pointer;
+	}
+}
+
+	.projectPageDesc-List.showing{
 		background-color: $tangerine;
 		color: $white;
 		visibility: visible;
@@ -644,24 +645,4 @@ transition-delay: 2s;
 				color: $white;
 			}
 		}
-	}
-	#homeNav{
-		padding-bottom: 2%;
-	}
-	.wireFrameMain{
-		position: relative;
-		display: block;
-		margin: auto;
-		&:hover{
-			opacity: .25;
-			cursor: pointer;
-		}
-	}
-	#pearlFrame{
-		left:6.45%;
-		padding-top: 10%;
-	}
-	#do_itFrame{
-		left:6.45%;
-	}
 }
