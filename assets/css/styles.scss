@@ -1,6 +1,7 @@
 //variables
 // $backgroundColor:
-$mainFont: Roboto, sans-serif;
+$mainFont: Nunito, sans-serif;
+$secondFont: Montserrat, sans-serif;
 $boxShadow: 0 1px 6px #888888;
 $silver: #070707;
 $white: white;
@@ -273,6 +274,9 @@ body {
 			width: 33.33%;
 		}
 	}
+	.headerName{
+		font-family: $secondFont;
+	}
 	button {
 		outline: none;
 		border: none;
@@ -465,7 +469,7 @@ transition-delay: 2s;
 			}
 		}
 		.projectTitle{
-			font-family: $mainFont;
+			font-family: $secondFont;
 			font-weight: 700;
 			position: absolute;
 			margin: -1.5em 0 0 .5em;
@@ -625,13 +629,15 @@ transition-delay: 2s;
 	position: relative;
 	display: block;
 	margin: 10% auto 2% auto;
-	height: 33em;
+	height: 30em;
 	&:hover{
 		opacity: .25;
 		cursor: pointer;
 	}
 }
-
+	.projectPageDesc-List{
+		display: none;
+	}
 	.projectPageDesc-List.showing{
 		background-color: $tangerine;
 		color: $white;
